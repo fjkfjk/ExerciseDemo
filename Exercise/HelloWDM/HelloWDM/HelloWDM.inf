@@ -1,0 +1,66 @@
+;
+; HelloWDM.inf
+;
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=HelloWDMDevice ; TODO: edit Class
+ClassGuid={1B856AD5-B674-44A4-B8EA-DCE68830E23F} ; TODO: edit ClassGuid
+Provider=%ManufacturerName%
+CatalogFile=HelloWDM.cat
+DriverVer= ; TODO: set DriverVer in stampinf property pages
+
+[DestinationDirs]
+DefaultDestDir = 12
+
+; ================= Class section =====================
+
+[ClassInstall32]
+Addreg=HelloWDMClassReg
+
+[HelloWDMClassReg]
+HKR,,,0,%ClassName%
+HKR,,Icon,,-5
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+HelloWDM.sys  = 1,,
+
+;*****************************************
+; Install Section
+;*****************************************
+
+[Manufacturer]
+%ManufacturerName%=Standard,NT$ARCH$
+
+[Standard.NT$ARCH$]
+%HelloWDM.DeviceDesc%=HelloWDM_Device, Root\HelloWDM ; TODO: edit hw-id
+
+[HelloWDM_Device.NT]
+CopyFiles=Drivers_Dir
+
+[Drivers_Dir]
+HelloWDM.sys
+
+;-------------- Service installation
+[HelloWDM_Device.NT.Services]
+AddService = HelloWDM,%SPSVCINST_ASSOCSERVICE%, HelloWDM_Service_Inst
+
+; -------------- HelloWDM driver install sections
+[HelloWDM_Service_Inst]
+DisplayName    = %HelloWDM.SVCDESC%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\HelloWDM.sys
+LoadOrderGroup = Extended Base
+
+[Strings]
+SPSVCINST_ASSOCSERVICE= 0x00000002
+ManufacturerName="XYG" ; TODO: add ManufacturerName
+ClassName="HelloWDMDevice" ; TODO: edit ClassName
+DiskName = "HelloWDM Installation Disk"
+HelloWDM.DeviceDesc = "HelloWDM Device"
+HelloWDM.SVCDESC = "HelloWDM Service"

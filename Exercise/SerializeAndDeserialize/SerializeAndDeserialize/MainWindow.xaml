@@ -1,0 +1,27 @@
+﻿<Window x:Class="SerializeAndDeserialize.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="480" Width="320">
+    <Grid>
+        <Label Content="Patient Information" HorizontalAlignment="Left" Margin="94,10,0,0" VerticalAlignment="Top" Height="40" Width="130" FontSize="13"/>
+        <Label Content="Name:" HorizontalAlignment="Left" Margin="35,60,0,0" VerticalAlignment="Top"/>
+        <Label Content="ID:" HorizontalAlignment="Left" Margin="35,90,0,0" VerticalAlignment="Top"/>
+        <Label Content="Age:" HorizontalAlignment="Left" Margin="35,120,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtName" HorizontalAlignment="Left" Height="23" Margin="160,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtId" HorizontalAlignment="Left" Height="23" Margin="160,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtAge" HorizontalAlignment="Left" Height="23" Margin="160,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Report:" HorizontalAlignment="Left" Margin="35,150,0,0" VerticalAlignment="Top"/>
+        <Label Content="ReportId:" HorizontalAlignment="Left" Margin="60,180,0,0" VerticalAlignment="Top"/>
+        <Label Content="Report1:" HorizontalAlignment="Left" Margin="60,210,0,0" VerticalAlignment="Top"/>
+        <Label Content="Report2:" HorizontalAlignment="Left" Margin="60,240,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtReportId" HorizontalAlignment="Left" Height="23" Margin="160,180,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtReport1" HorizontalAlignment="Left" Height="23" Margin="160,210,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtReport2" HorizontalAlignment="Left" Height="23" Margin="160,240,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnRead" Content="Read" HorizontalAlignment="Left" Margin="60,345,0,0" VerticalAlignment="Top" Width="75" Click="btnRead_Click"/>
+        <Button x:Name="btnWrite" Content="Write" HorizontalAlignment="Left" Margin="180,345,0,0" VerticalAlignment="Top" Width="75" Click="btnWrite_Click"/>
+        <Grid HorizontalAlignment="Left" Height="21" Margin="35,300,0,0" VerticalAlignment="Top" Width="245">
+            <RadioButton x:Name="rdBtnBinary" Content="Binary" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top"/>
+            <RadioButton x:Name="rdBtnSoap" Content="Soap" HorizontalAlignment="Left" Margin="124,0,0,0" VerticalAlignment="Top"/>
+        </Grid>
+    </Grid>
+</Window>

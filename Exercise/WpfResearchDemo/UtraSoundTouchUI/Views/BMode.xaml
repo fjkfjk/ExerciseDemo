@@ -1,0 +1,208 @@
+﻿<UserControl x:Class="UtraSoundTouchUI.Views.BMode"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:UtraSoundTouchUI.Views"
+             xmlns:control="clr-namespace:CustomControlLibrary;assembly=CustomControlLibrary"
+             mc:Ignorable="d" 
+             d:DesignHeight="1080" d:DesignWidth="1366">
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="70"/>
+        </Grid.RowDefinitions>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="290"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid>
+                <Grid.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                        <GradientStop Offset="0" Color="#002940"/>
+                        <GradientStop Offset="0.5" Color="#031C35"/>
+                        <GradientStop Offset="0.8" Color="#070E2B"/>
+                        <GradientStop Offset="1" Color="#042839"/>
+                    </LinearGradientBrush>
+                </Grid.Background>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <control:ImageButton ImageText="新增病人" Margin="0,29,0,0" Background="{StaticResource MenuButtonBackground}"/>
+                <control:ImageButton Grid.Column="1" ImageText="体标" Margin="0,29,0,0" Background="{StaticResource MenuButtonBackground}"/>
+                <control:ImageButton ImageText="病人管理" Grid.Row="1" Margin="0,29,0,0" Background="{StaticResource MenuButtonBackground}"/>
+                <control:ImageButton Grid.Column="1" Grid.Row="1" ImageText="注释" Margin="0,29,0,0" Background="{StaticResource MenuButtonBackground}"/>
+                <control:ImageButton ImageText="结束检查" Grid.Row="3" Margin="0,29,0,0" Background="{StaticResource MenuButtonBackground}"/>
+                <control:ImageButton Grid.Row="4" ImageText="系统设置" Margin="0,29,0,0" Background="{StaticResource MenuButtonBackground}"/>
+                <control:ImageButton Grid.Column="1" Grid.Row="4" ImageText="探头和应用" Margin="0,29,0,0" Background="{StaticResource MenuButtonBackground}"/>
+            </Grid>
+            <Grid Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="290"/>
+                    <ColumnDefinition Width="530"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <control:ImageButton ImageText="翻转" Margin="0,29,0,0" Background="{StaticResource DarkBuleMenuButtonBackground}"/>
+                    <control:ImageButton Grid.Column="1" ImageText="全屏" Margin="0,29,0,0" Background="{StaticResource DarkBuleMenuButtonBackground}"/>
+                    <control:ImageButton Grid.Row="1" ImageText="左/右" Margin="0,29,0,0" Background="{StaticResource DarkBuleMenuButtonBackground}"/>
+                    <control:ImageButton Grid.Row="1" Grid.Column="1" ImageText="上/下" Margin="0,29,0,0" Background="{StaticResource DarkBuleMenuButtonBackground}"/>
+                </Grid>
+                <Grid Grid.Column="1" Margin="0,29,0,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <control:ItemPanel Title="基线" Foreground="White" FontSize="{StaticResource ApplicationTextFontSize}" Width="215" Height="145" VerticalAlignment="Top" HorizontalContentAlignment="Center">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <TextBlock Text="50 %" HorizontalAlignment="Center" Margin="0,5,0,0" FontSize="{StaticResource ApplicationTextFontSize}"/>
+                            <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="0,3,0,0">
+                                <Button Style="{DynamicResource CustomButtonStyle}" Margin="0,20,0,0">
+                                    <Path Stroke="{StaticResource ApplicationForeground}" Data="M 10,22.5 L25,7.5 40,22.5" Margin="-5,-5,0,0"/>
+                                </Button>
+                                <Button Style="{DynamicResource CustomButtonStyle}" Margin="3,20,0,0">
+                                    <Path Stroke="{StaticResource ApplicationForeground}" Data="M 10,7.5 L25,22.5 40,7.5" Margin="-5,-5,0,0"/>
+                                </Button>
+                            </StackPanel>
+                        </Grid>
+                    </control:ItemPanel>
+                    <control:ItemPanel Title="闪彩抑制" Grid.Column="1" Foreground="White" FontSize="{StaticResource ApplicationTextFontSize}" Width="215" Height="145" VerticalAlignment="Top" HorizontalContentAlignment="Center">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <TextBlock Text="1" HorizontalAlignment="Center" Margin="0,5,0,0" FontSize="{StaticResource ApplicationTextFontSize}"/>
+                            <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="0,3,0,0">
+                                <Button Style="{DynamicResource CustomButtonStyle}" Margin="0,20,0,0">
+                                    <Path Stroke="{StaticResource ApplicationForeground}" Data="M 10,22.5 L25,7.5 40,22.5" Margin="-5,-5,0,0"/>
+                                </Button>
+                                <Button Style="{DynamicResource CustomButtonStyle}" Margin="3,20,0,0">
+                                    <Path Stroke="{StaticResource ApplicationForeground}" Data="M 10,7.5 L25,22.5 40,7.5" Margin="-5,-5,0,0"/>
+                                </Button>
+                            </StackPanel>
+                        </Grid>
+                    </control:ItemPanel>
+                    <control:ItemPanel Title="线密度" Grid.Row="1" Foreground="White" Margin="0,30,0,0" FontSize="{StaticResource ApplicationTextFontSize}" Width="215" Height="145" VerticalAlignment="Top" HorizontalContentAlignment="Center">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <TextBlock Text="1" HorizontalAlignment="Center" Margin="0,5,0,0" FontSize="{StaticResource ApplicationTextFontSize}"/>
+                            <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="0,3,0,0">
+                                <Button Style="{DynamicResource CustomButtonStyle}" Margin="0,20,0,0" >
+                                    <Path Stroke="{StaticResource ApplicationForeground}" Data="M 10,22.5 L25,7.5 40,22.5" Margin="-5,-5,0,0"/>
+                                </Button>
+                                <Button Style="{DynamicResource CustomButtonStyle}" Margin="3,20,0,0">
+                                    <Path Stroke="{StaticResource ApplicationForeground}"  Data="M 10,7.5 L25,22.5 40,7.5" Margin="-5,-5,0,0"/>
+                                </Button>
+                            </StackPanel>
+                        </Grid>
+                    </control:ItemPanel>
+                    <control:ItemPanel Title="帧平滑" Grid.Row="1" Grid.Column="1" Margin="0,30,0,0" Foreground="White" FontSize="{StaticResource ApplicationTextFontSize}" Width="215" Height="145" VerticalAlignment="Top" HorizontalContentAlignment="Center">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <TextBlock Text="7" HorizontalAlignment="Center" Margin="0,5,0,0" FontSize="{StaticResource ApplicationTextFontSize}"/>
+                            <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="0,3,0,0">
+                                <Button Style="{DynamicResource CustomButtonStyle}" Margin="0,20,0,0">
+                                    <Path Stroke="{StaticResource ApplicationForeground}" Data="M 10,22.5 L25,7.5 40,22.5" Margin="-5,-5,0,0"/>
+                                </Button>
+                                <Button Style="{DynamicResource CustomButtonStyle}" Margin="3,20,0,0">
+                                    <Path Stroke="{StaticResource ApplicationForeground}"  Data="M 10,7.5 L25,22.5 40,7.5" Margin="-5,-5,0,0"/>
+                                </Button>
+                            </StackPanel>
+                        </Grid>
+                    </control:ItemPanel>
+
+                    <control:ItemPanel Title="显示格式" Grid.Row="2"  Margin="0,30,0,0" Foreground="White" FontSize="{StaticResource ApplicationTextFontSize}" Width="215" Height="215" VerticalAlignment="Top" HorizontalContentAlignment="Center">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition />
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <Button Style="{DynamicResource CustomButtonStyle}" Width="80" Height="80" Margin="0,8,0,0">
+
+                            </Button>
+                            <Button Grid.Column="1" Style="{DynamicResource CustomButtonStyle}" Width="80" Height="80" Margin="20,8,0,0">
+
+                            </Button>
+                            <Button Grid.Row="1" Style="{DynamicResource CustomButtonStyle}" Width="80" Height="80" Margin="0,10,0,0">
+
+                            </Button>
+
+                        </Grid>
+                    </control:ItemPanel>
+                    <control:ItemPanel Title="参考图像" Grid.Row="2" Grid.Column="1"  Margin="0,30,0,0" Foreground="White" FontSize="{StaticResource ApplicationTextFontSize}" Width="215" Height="215" VerticalAlignment="Top" VerticalContentAlignment="Top" HorizontalContentAlignment="Left">
+                        <Grid>
+                            <Button Style="{DynamicResource CustomButtonStyle}" Width="80" Height="80" Margin="13,8,0,0" Content="A">
+                            </Button>
+                        </Grid>
+                    </control:ItemPanel>
+                </Grid>
+
+                <Grid Grid.Column="2" Margin="0,29,0,0">
+                    <control:ItemPanel Title="图谱" Width="150" Height="Auto" HorizontalContentAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Top" VerticalContentAlignment="Top" FontSize="{StaticResource ApplicationTextFontSize}">
+                        <StackPanel Margin="0,5,0,0">
+                            <Button Content="图谱1" Style="{DynamicResource CustomButtonStyle}" Width="130" Margin="0,5,0,0"/>
+                            <Button Content="图谱2" Style="{DynamicResource CustomButtonStyle}" Margin="0,10,0,0" Width="130"/>
+                            <Button Content="图谱3" Style="{DynamicResource CustomButtonStyle}" Margin="0,10,0,0" Width="130"/>
+                            <Button Content="图谱4" Style="{DynamicResource CustomButtonStyle}" Margin="0,10,0,5" Width="130"/>
+                            <Button Content="图谱5" Style="{DynamicResource CustomButtonStyle}" Margin="0,10,0,5" Width="130"/>
+                            <Button Content="图谱6" Style="{DynamicResource CustomButtonStyle}" Margin="0,5,0,5" Width="130"/>
+                            <Button Content="图谱7" Style="{DynamicResource CustomButtonStyle}" Margin="0,5,0,5" Width="130"/>
+                            <Button Content="图谱8" Style="{DynamicResource CustomButtonStyle}" Margin="0,5,0,5" Width="130"/>
+                            <Button Content="图谱9" Style="{DynamicResource CustomButtonStyle}" Margin="0,5,0,5" Width="130"/>
+                        </StackPanel>
+                    </control:ItemPanel>
+                </Grid>
+            </Grid>
+        </Grid>
+        <Grid Grid.Row="1" Background="#111111">
+            <StackPanel Orientation="Horizontal" Margin="0,15,0,0">
+                <control:ParameterButton Width="200" Margin="0,0,0,0" Title="起始帧" Value="3210"/>
+                <control:ParameterButton Width="200" Margin="7,0,0,0" Title="脉冲重复频率" Value="1.8 KHz"/>
+                <control:ParameterButton Width="200" Margin="7,0,0,0" Title="壁滤波" Value="128.5 Hz"/>
+                <control:ParameterButton Width="200" Margin="7,0,0,0" Title="采样包" Value="12"/>
+                <control:ParameterButton Width="200" Margin="7,0,0,0" Title="彩色阈值" Value="9"/>
+                <control:ParameterButton Width="200" Margin="7,0,0,0" Title="灵敏度" Value="2"/>
+            </StackPanel>
+
+        </Grid>
+    </Grid>
+</UserControl>

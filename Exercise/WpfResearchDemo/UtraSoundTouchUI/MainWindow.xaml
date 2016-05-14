@@ -1,0 +1,125 @@
+﻿<Window x:Class="UtraSoundTouchUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UtraSoundTouchUI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="768" Width="1366">
+    <Window.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="17"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+        </Style>
+        <Style TargetType="TextBlock" x:Key="CommentTextStyle">
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+        </Style>
+    </Window.Resources>
+    <Grid Background="Black">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+        <Grid>
+            <Grid.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                    <GradientStop Offset="0" Color="#565656"/>
+                    <GradientStop Offset="0.5" Color="#393939"/>
+                    <GradientStop Offset="1" Color="#1B1B1B"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="VINNO" FontSize="23" FontWeight="Bold"/>
+            <TextBlock Text="ABC" Grid.Column="1"/>
+            <TextBlock Text="深度 16.00" Grid.Column="3"/>
+            <TextBlock Text="MI 1.0/TIS 1.3" Grid.Column="4"/>
+            <TextBlock Text="G1-4P 心脏成人" Grid.Column="5"/>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Canvas>
+                <Image Source="Images/Snail.png"/>
+                <Image Source="Images/ScanImage.png" Canvas.Left="385"/>
+            </Canvas>
+            <Grid HorizontalAlignment="Right" Margin="20,0,223,0" Grid.Column="1" Width="110" Height="110" VerticalAlignment="Top">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid Grid.ColumnSpan="3" Background="#1E1E1E">
+                    <TextBlock Text="B" Style="{StaticResource CommentTextStyle}"/>
+                </Grid>
+                
+                <TextBlock Text="AP" Grid.Row="1" Style="{StaticResource CommentTextStyle}"/>
+                <TextBlock Text="100" Grid.Row="1" Grid.Column="1" Style="{StaticResource CommentTextStyle}"/>
+                <TextBlock Text="%" Grid.Row="1" Grid.Column="2" Style="{StaticResource CommentTextStyle}"/>
+                <TextBlock Text="DG" Grid.Row="2" Style="{StaticResource CommentTextStyle}"/>
+                <TextBlock Text="41" Grid.Row="2" Grid.Column="1" Style="{StaticResource CommentTextStyle}"/>
+
+                <TextBlock Text="Fq" Grid.Row="3" Style="{StaticResource CommentTextStyle}"/>
+                <TextBlock Text="2.8" Grid.Row="3" Grid.Column="1" Style="{StaticResource CommentTextStyle}"/>
+                <TextBlock Text="MHz" Grid.Row="3" Grid.Column="2" Style="{StaticResource CommentTextStyle}"/>
+                <TextBlock Text="FR" Grid.Row="4" Style="{StaticResource CommentTextStyle}"/>
+                <TextBlock Text="31.2" Grid.Row="4" Grid.Column="1" Style="{StaticResource CommentTextStyle}"/>
+                <TextBlock Text="HZ" Grid.Row="4" Grid.Column="2" Style="{StaticResource CommentTextStyle}"/>
+                <TextBlock Text="DR" Grid.Row="5" Style="{StaticResource CommentTextStyle}"/>
+                <TextBlock Text="68" Grid.Row="5" Grid.Column="1" Style="{StaticResource CommentTextStyle}"/>
+                <TextBlock Text="dB" Grid.Row="5" Grid.Column="2" Style="{StaticResource CommentTextStyle}"/>
+            </Grid>
+            <Grid Grid.Column="1" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="0,0,0,5">
+                <StackPanel Width="120">
+                    <ProgressBar Value="18" Height="18" IsIndeterminate="False" Background="#183C83"/>
+                    <TextBlock Text="97 : 517" Style="{StaticResource CommentTextStyle}"/>
+                    <TextBlock Text="3.1 : 16.6s" Style="{StaticResource CommentTextStyle}"/>
+                </StackPanel>
+            </Grid>
+        </Grid>
+        <Grid Grid.Row="2">
+            <Grid.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                    <GradientStop Offset="0" Color="#515151"/>
+                    <GradientStop Offset="0.5" Color="#353535"/>
+                    <GradientStop Offset="1" Color="#1D1D1D"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="2012-01-29 09:21"/>
+            <TextBlock Text="admin" Grid.Column="1"/>
+            <TextBlock Text="姓名：张三 ID:12345" Grid.Column="3"/>
+        </Grid>
+       
+    </Grid>
+   
+</Window>

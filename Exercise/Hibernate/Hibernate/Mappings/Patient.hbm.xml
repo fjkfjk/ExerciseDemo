@@ -1,0 +1,766 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Hibernate"
+                   namespace="Hibernate.Domain">
+  <class name="Patient" table="T_Patient">
+    <id name="Id">
+      <generator class="identity" />
+    </id>
+    <property name="Name">
+      <column name="Name" sql-type="char" not-null="true" />
+    </property>
+    <property name="Age">
+      <column name="Age" sql-type="int" not-null="true" />
+    </property>
+    <property name="Age1">
+      <column name="Age1" sql-type="int"/>
+    </property>
+    <property name="Age2">
+      <column name="Age2" sql-type="int"/>
+    </property>
+    <property name="Age3">
+      <column name="Age3" sql-type="int"/>
+    </property>
+    <property name="Age4">
+      <column name="Age4" sql-type="int"/>
+    </property>
+    <property name="Age5">
+      <column name="Age5" sql-type="int"/>
+    </property>
+    <property name="Age6">
+      <column name="Age6" sql-type="int"/>
+    </property>
+    <property name="Age7">
+      <column name="Age7" sql-type="int"/>
+    </property>
+    <property name="Age8">
+      <column name="Age8" sql-type="int"/>
+    </property>
+    <property name="Age9">
+      <column name="Age9" sql-type="int"/>
+    </property>
+    <property name="Age10">
+      <column name="Age10" sql-type="int"/>
+    </property>
+    <property name="Age11">
+      <column name="Age11" sql-type="int"/>
+    </property>
+    <property name="Age12">
+      <column name="Age12" sql-type="int"/>
+    </property>
+    <property name="Age13">
+      <column name="Age13" sql-type="int"/>
+    </property>
+    <property name="Age14">
+      <column name="Age14" sql-type="int"/>
+    </property>
+    <property name="Age15">
+      <column name="Age15" sql-type="int"/>
+    </property>
+    <property name="Age16">
+      <column name="Age16" sql-type="int"/>
+    </property>
+    <property name="Age17">
+      <column name="Age17" sql-type="int"/>
+    </property>
+    <property name="Age18">
+      <column name="Age18" sql-type="int"/>
+    </property>
+    <property name="Age19">
+      <column name="Age19" sql-type="int"/>
+    </property>
+    <property name="Age20">
+      <column name="Age20" sql-type="int"/>
+    </property>
+    <property name="Age21">
+      <column name="Age21" sql-type="int"/>
+    </property>
+    <property name="Age22">
+      <column name="Age22" sql-type="int"/>
+    </property>
+    <property name="Age23">
+      <column name="Age23" sql-type="int"/>
+    </property>
+    <property name="Age24">
+      <column name="Age24" sql-type="int"/>
+    </property>
+    <property name="Age25">
+      <column name="Age25" sql-type="int"/>
+    </property>
+    <property name="Age26">
+      <column name="Age26" sql-type="int"/>
+    </property>
+    <property name="Age27">
+      <column name="Age27" sql-type="int"/>
+    </property>
+    <property name="Age28">
+      <column name="Age28" sql-type="int"/>
+    </property>
+    <property name="Age29">
+      <column name="Age29" sql-type="int"/>
+    </property>
+    <property name="Age30">
+      <column name="Age30" sql-type="int"/>
+    </property>
+    <property name="Age31">
+      <column name="Age31" sql-type="int"/>
+    </property>
+    <property name="Age32">
+      <column name="Age32" sql-type="int"/>
+    </property>
+    <property name="Age33">
+      <column name="Age33" sql-type="int"/>
+    </property>
+    <property name="Age34">
+      <column name="Age34" sql-type="int"/>
+    </property>
+    <property name="Age35">
+      <column name="Age35" sql-type="int"/>
+    </property>
+    <property name="Age36">
+      <column name="Age36" sql-type="int"/>
+    </property>
+    <property name="Age37">
+      <column name="Age37" sql-type="int"/>
+    </property>
+    <property name="Age38">
+      <column name="Age38" sql-type="int"/>
+    </property>
+    <property name="Age39">
+      <column name="Age39" sql-type="int"/>
+    </property>
+    <property name="Age40">
+      <column name="Age40" sql-type="int"/>
+    </property>
+    <property name="Age41">
+      <column name="Age41" sql-type="int"/>
+    </property>
+    <property name="Age42">
+      <column name="Age42" sql-type="int"/>
+    </property>
+    <property name="Age43">
+      <column name="Age43" sql-type="int"/>
+    </property>
+    <property name="Age44">
+      <column name="Age44" sql-type="int"/>
+    </property>
+    <property name="Age45">
+      <column name="Age45" sql-type="int"/>
+    </property>
+    <property name="Age46">
+      <column name="Age46" sql-type="int"/>
+    </property>
+    <property name="Age47">
+      <column name="Age47" sql-type="int"/>
+    </property>
+    <property name="Age48">
+      <column name="Age48" sql-type="int"/>
+    </property>
+    <property name="Age49">
+      <column name="Age49" sql-type="int"/>
+    </property>
+    <property name="Age50">
+      <column name="Age50" sql-type="int"/>
+    </property>
+    <property name="Age51">
+      <column name="Age51" sql-type="int"/>
+    </property>
+    <property name="Age52">
+      <column name="Age52" sql-type="int"/>
+    </property>
+    <property name="Age53">
+      <column name="Age53" sql-type="int"/>
+    </property>
+    <property name="Age54">
+      <column name="Age54" sql-type="int"/>
+    </property>
+    <property name="Age55">
+      <column name="Age55" sql-type="int"/>
+    </property>
+    <property name="Age56">
+      <column name="Age56" sql-type="int"/>
+    </property>
+    <property name="Age57">
+      <column name="Age57" sql-type="int"/>
+    </property>
+    <property name="Age58">
+      <column name="Age58" sql-type="int"/>
+    </property>
+    <property name="Age59">
+      <column name="Age59" sql-type="int"/>
+    </property>
+    <property name="Age60">
+      <column name="Age60" sql-type="int"/>
+    </property>
+    <property name="Age61">
+      <column name="Age61" sql-type="int"/>
+    </property>
+    <property name="Age62">
+      <column name="Age62" sql-type="int"/>
+    </property>
+    <property name="Age63">
+      <column name="Age63" sql-type="int"/>
+    </property>
+    <property name="Age64">
+      <column name="Age64" sql-type="int"/>
+    </property>
+    <property name="Age65">
+      <column name="Age65" sql-type="int"/>
+    </property>
+    <property name="Age66">
+      <column name="Age66" sql-type="int"/>
+    </property>
+    <property name="Age67">
+      <column name="Age67" sql-type="int"/>
+    </property>
+    <property name="Age68">
+      <column name="Age68" sql-type="int"/>
+    </property>
+    <property name="Age69">
+      <column name="Age69" sql-type="int"/>
+    </property>
+    <property name="Age70">
+      <column name="Age70" sql-type="int"/>
+    </property>
+    <property name="Age71">
+      <column name="Age71" sql-type="int"/>
+    </property>
+    <property name="Age72">
+      <column name="Age72" sql-type="int"/>
+    </property>
+    <property name="Age73">
+      <column name="Age73" sql-type="int"/>
+    </property>
+    <property name="Age74">
+      <column name="Age74" sql-type="int"/>
+    </property>
+    <property name="Age75">
+      <column name="Age75" sql-type="int"/>
+    </property>
+    <property name="Age76">
+      <column name="Age76" sql-type="int"/>
+    </property>
+    <property name="Age77">
+      <column name="Age77" sql-type="int"/>
+    </property>
+    <property name="Age78">
+      <column name="Age78" sql-type="int"/>
+    </property>
+    <property name="Age79">
+      <column name="Age79" sql-type="int"/>
+    </property>
+    <property name="Age80">
+      <column name="Age80" sql-type="int"/>
+    </property>
+    <property name="Age81">
+      <column name="Age81" sql-type="int"/>
+    </property>
+    <property name="Age82">
+      <column name="Age82" sql-type="int"/>
+    </property>
+    <property name="Age83">
+      <column name="Age83" sql-type="int"/>
+    </property>
+    <property name="Age84">
+      <column name="Age84" sql-type="int"/>
+    </property>
+    <property name="Age85">
+      <column name="Age85" sql-type="int"/>
+    </property>
+    <property name="Age86">
+      <column name="Age86" sql-type="int"/>
+    </property>
+    <property name="Age87">
+      <column name="Age87" sql-type="int"/>
+    </property>
+    <property name="Age88">
+      <column name="Age88" sql-type="int"/>
+    </property>
+    <property name="Age89">
+      <column name="Age89" sql-type="int"/>
+    </property>
+    <property name="Age90">
+      <column name="Age90" sql-type="int"/>
+    </property>
+    <property name="Age91">
+      <column name="Age91" sql-type="int"/>
+    </property>
+    <property name="Age92">
+      <column name="Age92" sql-type="int"/>
+    </property>
+    <property name="Age93">
+      <column name="Age93" sql-type="int"/>
+    </property>
+    <property name="Age94">
+      <column name="Age94" sql-type="int"/>
+    </property>
+    <property name="Age95">
+      <column name="Age95" sql-type="int"/>
+    </property>
+    <property name="Age96">
+      <column name="Age96" sql-type="int"/>
+    </property>
+    <property name="Age97">
+      <column name="Age97" sql-type="int"/>
+    </property>
+    <property name="Age98">
+      <column name="Age98" sql-type="int"/>
+    </property>
+    <property name="Age99">
+      <column name="Age99" sql-type="int"/>
+    </property>
+    <property name="Age100">
+      <column name="Age100" sql-type="int"/>
+    </property>
+    <property name="Age101">
+      <column name="Age101" sql-type="int"/>
+    </property>
+    <property name="Age102">
+      <column name="Age102" sql-type="int"/>
+    </property>
+    <property name="Age103">
+      <column name="Age103" sql-type="int"/>
+    </property>
+    <property name="Age104">
+      <column name="Age104" sql-type="int"/>
+    </property>
+    <property name="Age105">
+      <column name="Age105" sql-type="int"/>
+    </property>
+    <property name="Age106">
+      <column name="Age106" sql-type="int"/>
+    </property>
+    <property name="Age107">
+      <column name="Age107" sql-type="int"/>
+    </property>
+    <property name="Age108">
+      <column name="Age108" sql-type="int"/>
+    </property>
+    <property name="Age109">
+      <column name="Age109" sql-type="int"/>
+    </property>
+    <property name="Age110">
+      <column name="Age110" sql-type="int"/>
+    </property>
+    <property name="Age111">
+      <column name="Age111" sql-type="int"/>
+    </property>
+    <property name="Age112">
+      <column name="Age112" sql-type="int"/>
+    </property>
+    <property name="Age113">
+      <column name="Age113" sql-type="int"/>
+    </property>
+    <property name="Age114">
+      <column name="Age114" sql-type="int"/>
+    </property>
+    <property name="Age115">
+      <column name="Age115" sql-type="int"/>
+    </property>
+    <property name="Age116">
+      <column name="Age116" sql-type="int"/>
+    </property>
+    <property name="Age117">
+      <column name="Age117" sql-type="int"/>
+    </property>
+    <property name="Age118">
+      <column name="Age118" sql-type="int"/>
+    </property>
+    <property name="Age119">
+      <column name="Age119" sql-type="int"/>
+    </property>
+    <property name="Age120">
+      <column name="Age120" sql-type="int"/>
+    </property>
+    <property name="Age121">
+      <column name="Age121" sql-type="int"/>
+    </property>
+    <property name="Age122">
+      <column name="Age122" sql-type="int"/>
+    </property>
+    <property name="Age123">
+      <column name="Age123" sql-type="int"/>
+    </property>
+    <property name="Age124">
+      <column name="Age124" sql-type="int"/>
+    </property>
+    <property name="Age125">
+      <column name="Age125" sql-type="int"/>
+    </property>
+    <property name="Age126">
+      <column name="Age126" sql-type="int"/>
+    </property>
+    <property name="Age127">
+      <column name="Age127" sql-type="int"/>
+    </property>
+    <property name="Age128">
+      <column name="Age128" sql-type="int"/>
+    </property>
+    <property name="Age129">
+      <column name="Age129" sql-type="int"/>
+    </property>
+    <property name="Age130">
+      <column name="Age130" sql-type="int"/>
+    </property>
+    <property name="Age131">
+      <column name="Age131" sql-type="int"/>
+    </property>
+    <property name="Age132">
+      <column name="Age132" sql-type="int"/>
+    </property>
+    <property name="Age133">
+      <column name="Age133" sql-type="int"/>
+    </property>
+    <property name="Age134">
+      <column name="Age134" sql-type="int"/>
+    </property>
+    <property name="Age135">
+      <column name="Age135" sql-type="int"/>
+    </property>
+    <property name="Age136">
+      <column name="Age136" sql-type="int"/>
+    </property>
+    <property name="Age137">
+      <column name="Age137" sql-type="int"/>
+    </property>
+    <property name="Age138">
+      <column name="Age138" sql-type="int"/>
+    </property>
+    <property name="Age139">
+      <column name="Age139" sql-type="int"/>
+    </property>
+    <property name="Age140">
+      <column name="Age140" sql-type="int"/>
+    </property>
+    <property name="Age141">
+      <column name="Age141" sql-type="int"/>
+    </property>
+    <property name="Age142">
+      <column name="Age142" sql-type="int"/>
+    </property>
+    <property name="Age143">
+      <column name="Age143" sql-type="int"/>
+    </property>
+    <property name="Age144">
+      <column name="Age144" sql-type="int"/>
+    </property>
+    <property name="Age145">
+      <column name="Age145" sql-type="int"/>
+    </property>
+    <property name="Age146">
+      <column name="Age146" sql-type="int"/>
+    </property>
+    <property name="Age147">
+      <column name="Age147" sql-type="int"/>
+    </property>
+    <property name="Age148">
+      <column name="Age148" sql-type="int"/>
+    </property>
+    <property name="Age149">
+      <column name="Age149" sql-type="int"/>
+    </property>
+    <property name="Age150">
+      <column name="Age150" sql-type="int"/>
+    </property>
+    <property name="Age151">
+      <column name="Age151" sql-type="int"/>
+    </property>
+    <property name="Age152">
+      <column name="Age152" sql-type="int"/>
+    </property>
+    <property name="Age153">
+      <column name="Age153" sql-type="int"/>
+    </property>
+    <property name="Age154">
+      <column name="Age154" sql-type="int"/>
+    </property>
+    <property name="Age155">
+      <column name="Age155" sql-type="int"/>
+    </property>
+    <property name="Age156">
+      <column name="Age156" sql-type="int"/>
+    </property>
+    <property name="Age157">
+      <column name="Age157" sql-type="int"/>
+    </property>
+    <property name="Age158">
+      <column name="Age158" sql-type="int"/>
+    </property>
+    <property name="Age159">
+      <column name="Age159" sql-type="int"/>
+    </property>
+    <property name="Age160">
+      <column name="Age160" sql-type="int"/>
+    </property>
+    <property name="Age161">
+      <column name="Age161" sql-type="int"/>
+    </property>
+    <property name="Age162">
+      <column name="Age162" sql-type="int"/>
+    </property>
+    <property name="Age163">
+      <column name="Age163" sql-type="int"/>
+    </property>
+    <property name="Age164">
+      <column name="Age164" sql-type="int"/>
+    </property>
+    <property name="Age165">
+      <column name="Age165" sql-type="int"/>
+    </property>
+    <property name="Age166">
+      <column name="Age166" sql-type="int"/>
+    </property>
+    <property name="Age167">
+      <column name="Age167" sql-type="int"/>
+    </property>
+    <property name="Age168">
+      <column name="Age168" sql-type="int"/>
+    </property>
+    <property name="Age169">
+      <column name="Age169" sql-type="int"/>
+    </property>
+    <property name="Age170">
+      <column name="Age170" sql-type="int"/>
+    </property>
+    <property name="Age171">
+      <column name="Age171" sql-type="int"/>
+    </property>
+    <property name="Age172">
+      <column name="Age172" sql-type="int"/>
+    </property>
+    <property name="Age173">
+      <column name="Age173" sql-type="int"/>
+    </property>
+    <property name="Age174">
+      <column name="Age174" sql-type="int"/>
+    </property>
+    <property name="Age175">
+      <column name="Age175" sql-type="int"/>
+    </property>
+    <property name="Age176">
+      <column name="Age176" sql-type="int"/>
+    </property>
+    <property name="Age177">
+      <column name="Age177" sql-type="int"/>
+    </property>
+    <property name="Age178">
+      <column name="Age178" sql-type="int"/>
+    </property>
+    <property name="Age179">
+      <column name="Age179" sql-type="int"/>
+    </property>
+    <property name="Age180">
+      <column name="Age180" sql-type="int"/>
+    </property>
+    <property name="Age181">
+      <column name="Age181" sql-type="int"/>
+    </property>
+    <property name="Age182">
+      <column name="Age182" sql-type="int"/>
+    </property>
+    <property name="Age183">
+      <column name="Age183" sql-type="int"/>
+    </property>
+    <property name="Age184">
+      <column name="Age184" sql-type="int"/>
+    </property>
+    <property name="Age185">
+      <column name="Age185" sql-type="int"/>
+    </property>
+    <property name="Age186">
+      <column name="Age186" sql-type="int"/>
+    </property>
+    <property name="Age187">
+      <column name="Age187" sql-type="int"/>
+    </property>
+    <property name="Age188">
+      <column name="Age188" sql-type="int"/>
+    </property>
+    <property name="Age189">
+      <column name="Age189" sql-type="int"/>
+    </property>
+    <property name="Age190">
+      <column name="Age190" sql-type="int"/>
+    </property>
+    <property name="Age191">
+      <column name="Age191" sql-type="int"/>
+    </property>
+    <property name="Age192">
+      <column name="Age192" sql-type="int"/>
+    </property>
+    <property name="Age193">
+      <column name="Age193" sql-type="int"/>
+    </property>
+    <property name="Age194">
+      <column name="Age194" sql-type="int"/>
+    </property>
+    <property name="Age195">
+      <column name="Age195" sql-type="int"/>
+    </property>
+    <property name="Age196">
+      <column name="Age196" sql-type="int"/>
+    </property>
+    <property name="Age197">
+      <column name="Age197" sql-type="int"/>
+    </property>
+    <property name="Age198">
+      <column name="Age198" sql-type="int"/>
+    </property>
+    <property name="Age199">
+      <column name="Age199" sql-type="int"/>
+    </property>
+    <property name="Age200">
+      <column name="Age200" sql-type="int"/>
+    </property>
+    <property name="Age201">
+      <column name="Age201" sql-type="int"/>
+    </property>
+    <property name="Age202">
+      <column name="Age202" sql-type="int"/>
+    </property>
+    <property name="Age203">
+      <column name="Age203" sql-type="int"/>
+    </property>
+    <property name="Age204">
+      <column name="Age204" sql-type="int"/>
+    </property>
+    <property name="Age205">
+      <column name="Age205" sql-type="int"/>
+    </property>
+    <property name="Age206">
+      <column name="Age206" sql-type="int"/>
+    </property>
+    <property name="Age207">
+      <column name="Age207" sql-type="int"/>
+    </property>
+    <property name="Age208">
+      <column name="Age208" sql-type="int"/>
+    </property>
+    <property name="Age209">
+      <column name="Age209" sql-type="int"/>
+    </property>
+    <property name="Age210">
+      <column name="Age210" sql-type="int"/>
+    </property>
+    <property name="Age211">
+      <column name="Age211" sql-type="int"/>
+    </property>
+    <property name="Age212">
+      <column name="Age212" sql-type="int"/>
+    </property>
+    <property name="Age213">
+      <column name="Age213" sql-type="int"/>
+    </property>
+    <property name="Age214">
+      <column name="Age214" sql-type="int"/>
+    </property>
+    <property name="Age215">
+      <column name="Age215" sql-type="int"/>
+    </property>
+    <property name="Age216">
+      <column name="Age216" sql-type="int"/>
+    </property>
+    <property name="Age217">
+      <column name="Age217" sql-type="int"/>
+    </property>
+    <property name="Age218">
+      <column name="Age218" sql-type="int"/>
+    </property>
+    <property name="Age219">
+      <column name="Age219" sql-type="int"/>
+    </property>
+    <property name="Age220">
+      <column name="Age220" sql-type="int"/>
+    </property>
+    <property name="Age221">
+      <column name="Age221" sql-type="int"/>
+    </property>
+    <property name="Age222">
+      <column name="Age222" sql-type="int"/>
+    </property>
+    <property name="Age223">
+      <column name="Age223" sql-type="int"/>
+    </property>
+    <property name="Age224">
+      <column name="Age224" sql-type="int"/>
+    </property>
+    <property name="Age225">
+      <column name="Age225" sql-type="int"/>
+    </property>
+    <property name="Age226">
+      <column name="Age226" sql-type="int"/>
+    </property>
+    <property name="Age227">
+      <column name="Age227" sql-type="int"/>
+    </property>
+    <property name="Age228">
+      <column name="Age228" sql-type="int"/>
+    </property>
+    <property name="Age229">
+      <column name="Age229" sql-type="int"/>
+    </property>
+    <property name="Age230">
+      <column name="Age230" sql-type="int"/>
+    </property>
+    <property name="Age231">
+      <column name="Age231" sql-type="int"/>
+    </property>
+    <property name="Age232">
+      <column name="Age232" sql-type="int"/>
+    </property>
+    <property name="Age233">
+      <column name="Age233" sql-type="int"/>
+    </property>
+    <property name="Age234">
+      <column name="Age234" sql-type="int"/>
+    </property>
+    <property name="Age235">
+      <column name="Age235" sql-type="int"/>
+    </property>
+    <property name="Age236">
+      <column name="Age236" sql-type="int"/>
+    </property>
+    <property name="Age237">
+      <column name="Age237" sql-type="int"/>
+    </property>
+    <property name="Age238">
+      <column name="Age238" sql-type="int"/>
+    </property>
+    <property name="Age239">
+      <column name="Age239" sql-type="int"/>
+    </property>
+    <property name="Age240">
+      <column name="Age240" sql-type="int"/>
+    </property>
+    <property name="Age241">
+      <column name="Age241" sql-type="int"/>
+    </property>
+    <property name="Age242">
+      <column name="Age242" sql-type="int"/>
+    </property>
+    <property name="Age243">
+      <column name="Age243" sql-type="int"/>
+    </property>
+    <property name="Age244">
+      <column name="Age244" sql-type="int"/>
+    </property>
+    <property name="Age245">
+      <column name="Age245" sql-type="int"/>
+    </property>
+    <property name="Age246">
+      <column name="Age246" sql-type="int"/>
+    </property>
+    <property name="Age247">
+      <column name="Age247" sql-type="int"/>
+    </property>
+    <property name="Age248">
+      <column name="Age248" sql-type="int"/>
+    </property>
+    <property name="Age249">
+      <column name="Age249" sql-type="int"/>
+    </property>
+    <property name="Age250">
+      <column name="Age250" sql-type="int"/>
+    </property>
+  </class>
+</hibernate-mapping>

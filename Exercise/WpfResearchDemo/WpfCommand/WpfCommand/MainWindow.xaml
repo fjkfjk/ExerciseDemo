@@ -1,0 +1,14 @@
+﻿<Window x:Class="WpfCommand.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfCommand"
+        xmlns:control="clr-namespace:CustomControlLibrary;assembly=CustomControlLibrary"
+        mc:Ignorable="d"
+        Title="Wpf Command Demo" Height="350" Width="525"
+        WindowStartupLocation="CenterScreen">
+    <Grid Background="#002842">
+        <control:ImageButton NormalImage="Image_2.png" VerticalAlignment="Center" ImageText="新增病人" Command="{Binding PatientManagementCommand}"/>
+    </Grid>
+</Window>

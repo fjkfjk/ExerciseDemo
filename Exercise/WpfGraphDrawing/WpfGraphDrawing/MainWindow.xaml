@@ -1,0 +1,28 @@
+﻿<Window x:Class="WpfGraphDrawing.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfGraphDrawing"
+        mc:Ignorable="d"
+        Title="Graph Drawing Demo(Support Drag)" Height="500" Width="700" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="background.jpg"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal">
+            <Button Content="Draw Line" Width="75" Height="30" Margin="10,0,0,0" Click="DrawLine_Clicked"/>
+            <Button Content="Draw Circle" Width="75" Height="30" Margin="10,0,0,0" Click="DrawCircle_Clicked"/>
+            <Button Content="Draw Path" Width="75" Height="30" Margin="10,0,0,0" Click="DrawPath_Clicked"/>
+            <Button Content="Draw Path Segments" Width="150" Height="30" Margin="10,0,0,0" Click="DrawPathSegments_Clicked"/>
+            <Button Content="Draw Text" Width="75" Height="30" Margin="10,0,0,0" Click="DrawText_Clicked"/>
+        </StackPanel>
+        <Canvas Grid.Row="1" x:Name="DrawCanvas">
+            
+        </Canvas>
+    </Grid>
+</Window>

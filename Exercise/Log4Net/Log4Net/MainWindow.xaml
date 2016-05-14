@@ -1,0 +1,12 @@
+﻿<Window x:Class="Log4NetDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Button x:Name="btnFatal" Content="FATAL" HorizontalAlignment="Left" Margin="10,134,0,0" VerticalAlignment="Top" Width="75" Click="btnFatal_Click"/>
+        <Button x:Name="btnError" Content="ERROR" HorizontalAlignment="Left" Margin="110,134,0,0" VerticalAlignment="Top" Width="75" Click="btnError_Click"/>
+        <Button x:Name="btnWarn" Content="WARN" HorizontalAlignment="Left" Margin="210,134,0,0" VerticalAlignment="Top" Width="75" Click="btnWarn_Click"/>
+        <Button x:Name="btnInfo" Content="INFO" HorizontalAlignment="Left" Margin="310,134,0,0" VerticalAlignment="Top" Width="75" Click="btnInfo_Click"/>
+        <Button x:Name="btnDebug" Content="DEBUG" HorizontalAlignment="Left" Margin="410,134,0,0" VerticalAlignment="Top" Width="75" Click="btnDebug_Click"/>
+    </Grid>
+</Window>
