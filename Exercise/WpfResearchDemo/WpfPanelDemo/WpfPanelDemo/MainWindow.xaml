@@ -1,0 +1,18 @@
+﻿<Window x:Class="WpfPanelDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfPanelDemo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <StackPanel VerticalAlignment="Center">
+            <Button Content="Grid" Width="200" Click="Grid_Clicked"/>
+            <Button Content="StackPanel" Width="200" Margin="0,20,0,0" Click="StackPanel_Clicked"/>
+            <Button Content="DockPanel" Width="200" Margin="0,20,0,0" Click="DockPanel_Clicked"/>
+            <Button Content="WrapPanel" Width="200" Margin="0,20,0,0" Click="WrapPanel_Clicked"/>
+            <Button Content="Canvas" Width="200" Margin="0,20,0,0" Click="Canvas_Clicked"/>
+        </StackPanel>
+    </Grid>
+</Window>

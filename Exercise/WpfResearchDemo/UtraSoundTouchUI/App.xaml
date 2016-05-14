@@ -1,0 +1,91 @@
+﻿<Application x:Class="UtraSoundTouchUI.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:UtraSoundTouchUI"
+             xmlns:sys="clr-namespace:System;assembly=mscorlib"
+             StartupUri="Views\TouchUI.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Styles/TabStyle.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+            <LinearGradientBrush x:Key="MenuButtonBackground" StartPoint="0,0" EndPoint="0,1">
+                <GradientStop Offset="0" Color="#6Ea4D1"/>
+                <GradientStop Offset="0.5" Color="#1B9FE2"/>
+                <GradientStop Offset="0.5" Color="#0283CD"/>
+                <GradientStop Offset="0.8" Color="#0790D1"/>
+                <GradientStop Offset="1" Color="#023972"/>
+            </LinearGradientBrush>
+
+            <LinearGradientBrush x:Key="DarkBuleMenuButtonBackground" StartPoint="0,0" EndPoint="0,1">
+                <GradientStop Offset="0" Color="#5C9FCF"/>
+                <GradientStop Offset="0.25" Color="#3D7EAF"/>
+                <GradientStop Offset="0.5" Color="#144789"/>
+                <GradientStop Offset="0.85" Color="#16236D"/>
+                <GradientStop Offset="1" Color="#064D90"/>
+            </LinearGradientBrush>
+
+            <sys:Double x:Key="ApplicationTextFontSize">18</sys:Double>
+            <SolidColorBrush x:Key="ApplicationForeground" Color="White"/>
+
+            <Style x:Key="CustomButtonStyle" TargetType="{x:Type Button}">
+                <Setter Property="Width" Value="90"/>
+                <Setter Property="Height" Value="50"/>
+                <Setter Property="Foreground" Value="{StaticResource ApplicationForeground}"/>
+                <Setter Property="BorderThickness" Value="1"/>
+                <Setter Property="Background">
+                    <Setter.Value>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                            <GradientStop Offset="0" Color="#6591D2"></GradientStop>
+                            <GradientStop Offset="0.5" Color="#0C47AF"></GradientStop>
+                            <GradientStop Offset="1" Color="#6591D2"></GradientStop>
+                        </LinearGradientBrush>
+                    </Setter.Value>
+                </Setter>
+                <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                <Setter Property="VerticalContentAlignment" Value="Center"/>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Grid>
+                                <VisualStateManager.VisualStateGroups>
+                                    <VisualStateGroup x:Name="CommonStates">
+                                        <VisualState x:Name="Normal"/>
+                                        <VisualState x:Name="MouseOver">
+                                            <Storyboard>
+                                                <DoubleAnimation Duration="0" Storyboard.TargetName="BackgroundAnimation" Storyboard.TargetProperty="Opacity" To="1"/>
+                                            </Storyboard>
+                                        </VisualState>
+                                        <VisualState x:Name="Pressed">
+                                            <Storyboard>
+
+                                            </Storyboard>
+                                        </VisualState>
+                                    </VisualStateGroup>
+                                </VisualStateManager.VisualStateGroups>
+                                <Border x:Name="Background" CornerRadius="3" Background="{TemplateBinding Background}" BorderThickness="{TemplateBinding BorderThickness}" BorderBrush="{TemplateBinding BorderBrush}">
+                                    <Border Opacity="0"  x:Name="BackgroundAnimation" Background="#00FFFF" />
+                                </Border>
+                                <ContentPresenter
+                              x:Name="contentPresenter"
+                              Content="{TemplateBinding Content}"
+                              ContentTemplate="{TemplateBinding ContentTemplate}"
+                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                              HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                              Margin="{TemplateBinding Padding}"
+                              />
+                                <Rectangle x:Name="DisabledVisualElement" RadiusX="3" RadiusY="3" Fill="#FFFFFFFF" Opacity="0" IsHitTestVisible="false" />
+                                <Rectangle x:Name="FocusVisualElement" RadiusX="2" RadiusY="2" Margin="1" Stroke="#FF6DBDD1" StrokeThickness="1" Opacity="0" IsHitTestVisible="false" />
+                            </Grid>
+                            <!--<ControlTemplate.Triggers>
+                                <Trigger Property="IsMouseOver" Value="true">
+                                    <Setter Property="Background" Value="#00FFFF" />
+                                </Trigger>
+                            </ControlTemplate.Triggers>-->
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
